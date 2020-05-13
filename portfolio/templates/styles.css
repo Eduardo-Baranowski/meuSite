@@ -1,0 +1,16 @@
+.imagem {
+
+      width: 250px;
+      height: 250px;
+      background:url("../static/logo.png");
+}
+.texto {
+      position: absolute;
+      background-color: rgba(0,0,0,0.5);
+      color:#fff;
+      text-align: center;
+      top: 100px;
+      width: 250px;
+      line-height: 30px;
+      height: 30px;
+}
