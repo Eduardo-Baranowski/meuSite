@@ -8,7 +8,7 @@
     </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Studio It</a>
+  <a class="navbar-brand" href="/home">Studio It</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,22 +16,22 @@
   
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Início</a>
+        <a class="nav-link" href="/home">Início</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="#">Sobre</a>
+        <a class="nav-link" href="/sobre">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Serviços</a>
+        <a class="nav-link" href="/servicos">Serviços</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="#">Artigos</a>
+        <a class="nav-link" href="/artigos">Artigos</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfólio</a>
+        <a class="nav-link" href="/portfolio">Portfólio</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="#">Orçamentos</a>
+        <a class="nav-link" href="/orcamentos">Orçamentos</a>
       </li>      
     </ul>
     <form class="form-inline mt-2 mt-md-0">
@@ -42,14 +42,9 @@
   </div>
       
 </nav>
-<main role="main" class="jumbotron">
-    <div class="container">    
-          <img id = "imagem" src="../static/logo.png" style="width:100%" alt="My image">
-        <h1>Estamos Aqui Para Vocês!</h1>
-        <p class="lead">Trabalhamos para desenvolver o seu site. Onde você estiver nós chegamos até você. O Studio It está disponível para desenvolver o seu site por um preço acessível.
-        </p>
-        <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">Confira Nosso Portfólio &raquo;</a>
-    </div>
+<main role="main" class="container">
+  {% block conteudo %}
+  {% endblock %}
 </main>
 <footer class="footer fixed-bottom">
             <div class="container">
